@@ -419,6 +419,9 @@
 					BC14CDF1163019B400BC85DC = {
 						DevelopmentTeam = 6N89BHW7Q5;
 					};
+					BC14CE1B163019B500BC85DC = {
+						DevelopmentTeam = 6N89BHW7Q5;
+					};
 				};
 			};
 			buildConfigurationList = BC14CDEC163019B400BC85DC /* Build configuration list for PBXProject "ShiwakeTrainingClass3" */;
@@ -632,7 +635,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "08251797-9411-4efe-8980-857d37e4edf0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -648,7 +651,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=*]" = "40b2e641-1a9b-4784-996f-f1b7650331aa";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -657,6 +660,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShiwakeTrainingClass3.app/ShiwakeTrainingClass3";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -666,6 +671,7 @@
 				GCC_PREFIX_HEADER = "ShiwakeTrainingClass3/ShiwakeTrainingClass3-Prefix.pch";
 				INFOPLIST_FILE = "ShiwakeTrainingClass3Tests/ShiwakeTrainingClass3Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -674,6 +680,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShiwakeTrainingClass3.app/ShiwakeTrainingClass3";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -683,6 +691,7 @@
 				GCC_PREFIX_HEADER = "ShiwakeTrainingClass3/ShiwakeTrainingClass3-Prefix.pch";
 				INFOPLIST_FILE = "ShiwakeTrainingClass3Tests/ShiwakeTrainingClass3Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
