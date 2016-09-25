@@ -89,7 +89,7 @@
 	rectNaviBar.size.height = NAVIBAR_HIGHT;
 	UINavigationBar* navBarTop = [[UINavigationBar alloc] initWithFrame:rectNaviBar];
 	UINavigationItem* title = [[UINavigationItem alloc] initWithTitle:@"貸借対照表"];
-	UIBarButtonItem* btnItemSetting = [[UIBarButtonItem alloc] initWithTitle:@"終了" style:UIBarButtonItemStyleBordered target:self action:@selector(actFinishOnNaviBar:)];
+	UIBarButtonItem* btnItemSetting = [[UIBarButtonItem alloc] initWithTitle:@"終了" style:UIBarButtonItemStylePlain target:self action:@selector(actFinishOnNaviBar:)];
 	title.rightBarButtonItem = btnItemSetting;
 	[navBarTop pushNavigationItem:title animated:YES];
 	[self.view addSubview:navBarTop];

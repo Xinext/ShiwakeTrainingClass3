@@ -67,7 +67,7 @@
 	rectNaviBar.size.height = NAVIBAR_HIGHT;
 	UINavigationBar* navBarTop = [[UINavigationBar alloc] initWithFrame:rectNaviBar];
 	UINavigationItem* title = [[UINavigationItem alloc] initWithTitle:@"メインメニュー"];
-	UIBarButtonItem* btnItemSetting = [[UIBarButtonItem alloc] initWithTitle:@"設定" style:UIBarButtonItemStyleBordered target:self action:@selector(actSettingOnNaviBar:)];
+	UIBarButtonItem* btnItemSetting = [[UIBarButtonItem alloc] initWithTitle:@"設定" style:UIBarButtonItemStylePlain target:self action:@selector(actSettingOnNaviBar:)];
 	title.rightBarButtonItem = btnItemSetting;
 	[navBarTop pushNavigationItem:title animated:YES];
 	[self.view addSubview:navBarTop];
